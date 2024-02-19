@@ -1,0 +1,20 @@
+---
+# https://github.com/hexlet-boilerplates/nodejs-package/blob/main/.eslintrc.yml
+
+# https://eslint.org/docs/user-guide/configuring#specifying-environments
+env: # environments the script is designed to run in 
+  node: true # Node.js global variables and Node.js scoping
+
+extends: # third-party plugins define additional rules, environments, configs, etc. for ESLint to use
+  - 'airbnb-base'
+
+parserOptions:
+  ecmaVersion: latest # ESLint будет распознавать и корректно обрабатывать все новые возможности и синтаксические конструкции
+
+rules:
+  no-console: 0 # Using `console` without generating ESLint warnings or errors
+  import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
+    - error #  ESLint будет генерировать ошибку, если расширения файлов не будут указаны в импортах
+    - ignorePackages # импорты из установленных пакетов следует игнорировать при проверке расширений файлов
+    - js: always # при импорте модулей всегда должно быть указано расширение файла .js
+  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }] # Allowed to use underscores for variables __filename and __dirname
