@@ -3,8 +3,6 @@
 // с использованием интерпретатора Node.js
 // env используется для поиска исполняемого файла node
 
-import greeting from '../src/cli.js';
+import greetUser from '../src/cli.js';
 
-global.name = greeting(); // Сохраняем имя пользователя в глобальной переменной
-
-console.log(global.name); // Проверяем, правильно ли установлена глобальная переменная name
+greetUser();
