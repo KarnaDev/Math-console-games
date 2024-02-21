@@ -13,8 +13,11 @@ parserOptions:
 
 rules:
   no-console: 0 # Using `console` without generating ESLint warnings or errors
-  import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
-    - error #  ESLint будет генерировать ошибку, если расширения файлов не будут указаны в импортах
-    - ignorePackages # импорты из установленных пакетов следует игнорировать при проверке расширений файлов
-    - js: always # при импорте модулей всегда должно быть указано расширение файла .js
-  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }] # Allowed to use underscores for variables __filename and __dirname
+  import/extensions: off 
+  #   - error #  ESLint будет генерировать ошибку, если расширения файлов не будут указаны в импортах
+  #   - ignorePackages # импорты из установленных пакетов следует игнорировать при проверке расширений файлов
+  #   - js: always # при импорте модулей всегда должно быть указано расширение файла .js
+  # no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }] # Allowed to use underscores for variables __filename and __dirname
+
+plugins:
+  - 'import'

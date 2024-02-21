@@ -14,5 +14,5 @@ link: # глобальная установка пакета из локальн
 # так будто он был установлен глобально через npm install -g
 	npm link
 
-lint:
-	npx eslint
+lint: # запуск ESLint для всех файлов JavaScript в текущем каталоге и его подкаталогах
+	npx eslint .
