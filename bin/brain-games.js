@@ -5,4 +5,6 @@
 
 import greeting from '../src/cli.js';
 
-greeting();
+global.name = greeting(); // Сохраняем имя пользователя в глобальной переменной
+
+console.log(global.name); // Проверяем, правильно ли установлена глобальная переменная name
