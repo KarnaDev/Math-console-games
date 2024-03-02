@@ -8,8 +8,8 @@
 
 ###  Start the game, victory and defeat of the player:
 
-## Brain-even:
+#### Brain-even:
 [![asciicast](https://asciinema.org/a/644948.svg)](https://asciinema.org/a/644948)
 
-## Brain-calc:
+#### Brain-calc:
 [![asciicast](https://asciinema.org/a/644949.svg)](https://asciinema.org/a/644949)
