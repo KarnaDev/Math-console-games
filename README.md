@@ -6,9 +6,9 @@ A set of five console games for brain training, created as an educational projec
 * Brain-progression: finding the missing number in an arithmetic progression
 * Brain-prime: determining whether a number is prime or not
 
-### Dependencies
+### Dependencies:
 **dependencies:**
-readline-sync
+* readline-sync
 
 **devDependencies:**
 * eslint
@@ -35,7 +35,7 @@ readline-sync
 <!-- [![Test Coverage](https://api.codeclimate.com/v1/badges/8c3707dff64722f4c946/test_coverage)](https://codeclimate.com/github/KarnaDev/frontend-project-44/test_coverage) -->
 
 
-###  Start a game, victory and defeat of the player:
+###  Demonstration of the gameplay process (game launch, defeat, and victory):
 
 #### Brain-even
 [![asciicast](https://asciinema.org/a/645007.svg)](https://asciinema.org/a/645007)
