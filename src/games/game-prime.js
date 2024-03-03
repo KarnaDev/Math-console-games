@@ -16,7 +16,7 @@ const isPrime = (number) => {
 };
 
 const playRound = () => {
-  const number = getRandomNumber(30);
+  const number = getRandomNumber();
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   console.log(`Question: ${number}`);
   const userAnswer = readlineSync.question('Your answer: ');

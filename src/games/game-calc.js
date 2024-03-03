@@ -8,9 +8,11 @@ const operators = {
   '+': (x, y) => x + y,
   '-': (x, y) => x - y,
   '*': (x, y) => x * y,
+  // To add complexity to the game, uncomment the division operator
   // '/': (x, y) => x / y
 };
 
+// To add complexity to the game, elevate the value
 const maxNumber = 10;
 
 const playRound = () => {

@@ -14,12 +14,12 @@ const getGreatestCommonDivisor = (num1, num2) => {
 };
 
 const playRound = () => {
-  const randomNum1 = getRandomNumber();
-  const randomNum2 = getRandomNumber();
+  const number1 = getRandomNumber();
+  const number2 = getRandomNumber();
 
-  console.log(`Question: ${randomNum1} ${randomNum2}`);
+  console.log(`Question: ${number1} ${number2}`);
   const userAnswer = Number(readlineSync.question('Your answer: '));
-  const correctAnswer = getGreatestCommonDivisor(randomNum1, randomNum2);
+  const correctAnswer = getGreatestCommonDivisor(number1, number2);
   return { userAnswer, correctAnswer };
 };
 

@@ -5,9 +5,12 @@ import playGame from '../index.js';
 const rules = 'What number is missing in the progression?';
 
 const generateProgression = (length) => {
-  const initialNum = getRandomNumber(20);
+  const initialNum = getRandomNumber();
   const progression = [initialNum];
-  const step = getRandomNumber(5, 2);
+  // To add complexity to the game, increase one or both values of the progression step
+  const stepMin = 2;
+  const stepMax = 5;
+  const step = getRandomNumber(stepMax, stepMin);
 
   for (let i = 1; i < length; i += 1) {
     progression.push(initialNum + step * i);
@@ -17,7 +20,11 @@ const generateProgression = (length) => {
 };
 
 const playRound = () => {
-  const length = getRandomNumber(10, 5);
+  // To alter the potential number of characters in the progression,
+  // increase or decrease the values accordingly
+  const lengthMin = 5;
+  const lengthMax = 10;
+  const length = getRandomNumber(lengthMax, lengthMin);
   const progression = generateProgression(length);
   const indexRandom = getRandomNumber(length - 1);
 

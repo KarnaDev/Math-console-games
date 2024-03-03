@@ -1,27 +1,53 @@
+### Description:
+A set of five console games for brain training, created as an educational project
+* Brain-even: determining whether a number is even or odd
+* Brain-calc: performing arithmetic operations with two numbers
+* Brain-gcd: finding the greatest common divisor for two numbers
+* Brain-progression: finding the missing number in an arithmetic progression
+* Brain-prime: determining whether a number is prime or not
+
+### Dependencies
+**dependencies:**
+readline-sync
+
+**devDependencies:**
+* eslint
+* eslint-config-airbnb-base
+* eslint-plugin-import
+
+### Setup:
+1. git clone git@github.com:KarnaDev/frontend-project-44.git
+2. sudo apt install make 
+3. make install
+
+### Running games:
+* brain-even
+* brain-calc
+* brain-gcd
+* brain-progression
+* brain-prime
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/KarnaDev/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/KarnaDev/frontend-project-44/actions)
 
-### Codeclimate tests and status:
+### Codeclimate status:
 [![Maintainability](https://api.codeclimate.com/v1/badges/8c3707dff64722f4c946/maintainability)](https://codeclimate.com/github/KarnaDev/frontend-project-44/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/8c3707dff64722f4c946/test_coverage)](https://codeclimate.com/github/KarnaDev/frontend-project-44/test_coverage)
+<!-- [![Test Coverage](https://api.codeclimate.com/v1/badges/8c3707dff64722f4c946/test_coverage)](https://codeclimate.com/github/KarnaDev/frontend-project-44/test_coverage) -->
 
 
 ###  Start a game, victory and defeat of the player:
 
-#### Brain-games:
-[![asciicast](https://asciinema.org/a/645006.svg)](https://asciinema.org/a/645006)
-
-#### Brain-even:
+#### Brain-even
 [![asciicast](https://asciinema.org/a/645007.svg)](https://asciinema.org/a/645007)
 
-#### Brain-calc:
+#### Brain-calc
 [![asciicast](https://asciinema.org/a/644949.svg)](https://asciinema.org/a/644949)
 
-#### Brain-gcd:
+#### Brain-gcd
 [![asciicast](https://asciinema.org/a/645002.svg)](https://asciinema.org/a/645002)
 
-#### Brain-progression:
+#### Brain-progression
 [![asciicast](https://asciinema.org/a/645032.svg)](https://asciinema.org/a/645032)
 
-#### Brain-prime:
+#### Brain-prime
 [![asciicast](https://asciinema.org/a/645058.svg)](https://asciinema.org/a/645058)
