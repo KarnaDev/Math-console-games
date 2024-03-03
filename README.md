@@ -22,3 +22,6 @@
 
 #### Brain-progression:
 [![asciicast](https://asciinema.org/a/645032.svg)](https://asciinema.org/a/645032)
+
+#### Brain-prime:
+[![asciicast](https://asciinema.org/a/645058.svg)](https://asciinema.org/a/645058)
