@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const operators = {
   '+': (x, y) => x + y,
@@ -27,6 +27,6 @@ const playRound = () => {
   return { userAnswer, correctAnswer };
 };
 
-const playBrainCalc = () => playGame(rules, playRound);
+const playBrainCalc = () => playGame(description, playRound);
 
 export default playBrainCalc;

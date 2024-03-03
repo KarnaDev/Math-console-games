@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const getGreatestCommonDivisor = (num1, num2) => {
   for (let i = Math.min(num1, num2); i > 1; i -= 1) {
@@ -23,6 +23,6 @@ const playRound = () => {
   return { userAnswer, correctAnswer };
 };
 
-const playBrainGcd = () => playGame(rules, playRound);
+const playBrainGcd = () => playGame(description, playRound);
 
 export default playBrainGcd;

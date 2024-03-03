@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number <= 1) return false;
@@ -23,6 +23,6 @@ const playRound = () => {
   return { userAnswer, correctAnswer };
 };
 
-const playBrainPrime = () => playGame(rules, playRound);
+const playBrainPrime = () => playGame(description, playRound);
 
 export default playBrainPrime;

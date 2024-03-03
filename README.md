@@ -32,8 +32,6 @@ A set of five console games for brain training, created as an educational projec
 
 ### Codeclimate status:
 [![Maintainability](https://api.codeclimate.com/v1/badges/8c3707dff64722f4c946/maintainability)](https://codeclimate.com/github/KarnaDev/frontend-project-44/maintainability)
-<!-- [![Test Coverage](https://api.codeclimate.com/v1/badges/8c3707dff64722f4c946/test_coverage)](https://codeclimate.com/github/KarnaDev/frontend-project-44/test_coverage) -->
-
 
 ###  Demonstration of the gameplay process (game launch, defeat, and victory):
 

@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
-const rules = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const generateProgression = (length) => {
   const initialNum = getRandomNumber();
@@ -37,6 +37,6 @@ const playRound = () => {
   return { userAnswer, correctAnswer };
 };
 
-const playBrainProgression = () => playGame(rules, playRound);
+const playBrainProgression = () => playGame(description, playRound);
 
 export default playBrainProgression;
