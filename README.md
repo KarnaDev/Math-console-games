@@ -6,7 +6,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/8c3707dff64722f4c946/test_coverage)](https://codeclimate.com/github/KarnaDev/frontend-project-44/test_coverage)
 
 
-###  Start the game, victory and defeat of the player:
+###  Start a game, victory and defeat of the player:
 
 #### Brain-games:
 [![asciicast](https://asciinema.org/a/645006.svg)](https://asciinema.org/a/645006)
@@ -19,3 +19,6 @@
 
 #### Brain-gcd:
 [![asciicast](https://asciinema.org/a/645002.svg)](https://asciinema.org/a/645002)
+
+#### Brain-progression:
+[![asciicast](https://asciinema.org/a/645032.svg)](https://asciinema.org/a/645032)
