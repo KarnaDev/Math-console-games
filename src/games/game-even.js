@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
-const description = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (number) => (number % 2 === 0);
 
 const playRound = () => {
