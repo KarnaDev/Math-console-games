@@ -16,9 +16,11 @@ A set of five console games for brain training, created as an educational projec
 * eslint-plugin-import
 
 ### Setup:
-1. git clone git@github.com:KarnaDev/frontend-project-44.git
-2. sudo apt install make 
-3. make install
+```
+git clone git@github.com:KarnaDev/frontend-project-44.git
+sudo apt install make 
+make install
+```
 
 ### Running games:
 * brain-even

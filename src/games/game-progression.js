@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
@@ -31,10 +30,8 @@ const playRound = () => {
   const correctAnswer = progression[indexRandom].toString();
   const progressionHidden = progression.map((num, i) => (i === indexRandom ? '..' : num));
 
-  console.log(`Question: ${progressionHidden.join(' ')}`);
-  const userAnswer = readlineSync.question('Your answer: ');
-
-  return { userAnswer, correctAnswer };
+  const question = `${progressionHidden.join(' ')}`;
+  return { question, correctAnswer };
 };
 
 const playBrainProgression = () => playGame(description, playRound);

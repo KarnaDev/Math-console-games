@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
@@ -18,9 +17,8 @@ const isPrime = (number) => {
 const playRound = () => {
   const number = getRandomNumber();
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
-  console.log(`Question: ${number}`);
-  const userAnswer = readlineSync.question('Your answer: ');
-  return { userAnswer, correctAnswer };
+  const question = number;
+  return { question, correctAnswer };
 };
 
 const playBrainPrime = () => playGame(description, playRound);

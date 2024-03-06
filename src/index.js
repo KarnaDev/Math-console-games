@@ -8,7 +8,10 @@ const playGame = (description, playRound) => {
   const roundsCount = 3;
 
   for (let i = 1; i <= roundsCount; i += 1) {
-    const { userAnswer, correctAnswer } = playRound();
+    const { question, correctAnswer } = playRound();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+
     if (correctAnswer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);

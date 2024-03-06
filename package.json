@@ -1,9 +1,9 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/KarnaDev/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/KarnaDev/frontend-project-44/actions)",
+  "description": "A set of five console games for brain training, created as an educational project",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",

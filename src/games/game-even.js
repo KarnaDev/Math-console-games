@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
@@ -7,10 +6,9 @@ const isEven = (number) => (number % 2 === 0);
 
 const playRound = () => {
   const number = getRandomNumber();
-  console.log(`Question: ${number} `);
-  const userAnswer = readlineSync.question('Your answer: ');
+  const question = number;
   const correctAnswer = isEven(number) ? 'yes' : 'no';
-  return { userAnswer, correctAnswer };
+  return { question, correctAnswer };
 };
 
 const playBrainEven = () => playGame(description, playRound);

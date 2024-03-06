@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
@@ -21,10 +20,9 @@ const playRound = () => {
   const number2 = getRandomNumber(maxNumber);
   const randomIndex = getRandomNumber(operatorsKeys.length - 1);
   const randomOperator = operatorsKeys[randomIndex];
-  const correctAnswer = operators[randomOperator](number1, number2);
-  console.log(`Question: ${number1} ${randomOperator} ${number2}`);
-  const userAnswer = Number(readlineSync.question('Your answer: '));
-  return { userAnswer, correctAnswer };
+  const correctAnswer = operators[randomOperator](number1, number2).toString();
+  const question = (`${number1} ${randomOperator} ${number2}`);
+  return { question, correctAnswer };
 };
 
 const playBrainCalc = () => playGame(description, playRound);

@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import getRandomNumber from '../generator-random-number.js';
 import playGame from '../index.js';
 
@@ -16,11 +15,9 @@ const getGreatestCommonDivisor = (num1, num2) => {
 const playRound = () => {
   const number1 = getRandomNumber();
   const number2 = getRandomNumber();
-
-  console.log(`Question: ${number1} ${number2}`);
-  const userAnswer = Number(readlineSync.question('Your answer: '));
-  const correctAnswer = getGreatestCommonDivisor(number1, number2);
-  return { userAnswer, correctAnswer };
+  const question = `${number1} ${number2}`;
+  const correctAnswer = getGreatestCommonDivisor(number1, number2).toString();
+  return { question, correctAnswer };
 };
 
 const playBrainGcd = () => playGame(description, playRound);
