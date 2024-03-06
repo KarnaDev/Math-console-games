@@ -18,16 +18,30 @@ A set of five console games for brain training, created as an educational projec
 ### Setup:
 ```
 git clone git@github.com:KarnaDev/frontend-project-44.git
-sudo apt install make 
+```
+```
+sudo apt install make
+```
+```
 make install
 ```
 
 ### Running games:
-* brain-even
-* brain-calc
-* brain-gcd
-* brain-progression
-* brain-prime
+```
+brain-even
+```
+```
+brain-calc
+```
+```
+brain-gcd
+```
+```
+brain-progression
+```
+```
+brain-prime
+```
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/KarnaDev/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/KarnaDev/frontend-project-44/actions)
